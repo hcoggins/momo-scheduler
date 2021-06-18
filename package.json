@@ -1,5 +1,5 @@
 {
-  "name": "momo-scheduler",
+  "name": "@tngtech/momo-scheduler",
   "version": "0.0.0",
   "description": "momo is a scheduler that persists jobs in mongodb",
   "main": "dist/index.js",
@@ -36,7 +36,7 @@
     "eslint-plugin-jest": "24.3.6",
     "eslint-plugin-jsdoc": "32.3.1",
     "eslint-plugin-markdown": "2.0.1",
-    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "eslint-plugin-prefer-arrow": "1.2.3",
     "eslint-plugin-prettier": "3.4.0",
     "jest": "26.6.3",
     "mongodb-memory-server": "6.9.6",
@@ -53,7 +53,7 @@
     "clean": "npx rimraf dist",
     "test": "jest --detectOpenHandles --forceExit",
     "test:integration": "npm run test -- --testPathPattern=test/integration",
-    "lint": "prettier --check \"**/*.{ts,tsx}\"  && eslint .",
-    "format": "prettier --write \"**/*.{ts,tsx}\" && eslint . --fix"
+    "lint": "prettier --check \"**/*.ts\"  && eslint \"**/*.{ts,js,json}\"",
+    "format": "prettier --write \"**/*.ts\" && eslint \"**/*.{ts,js,json}\""
   }
 }
